@@ -4,58 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moto and Auto</title>
-
+    <!-- Підключення спільного CSS файлу -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header>
-    <div>
-        <h1>Мій сайт</h1>
-        <section>
-            <h2>Тут буде трішки більше про мрії(?) </h2>
-            <p>В планах на майбутнє втілити декілька мрій. Пошуки будуть здійснюватись у цьому додатку: <a href="https://auto.ria.com/uk/">Auto.ria.</a>  </p>
-
-        </section>
-    </div>
-</header>
-
-<hr>
-
-<main>
-
-    <section>
-
-            <h2>Секція мото</h2>
-            <ul>
-                <li><p>Перша модель покупці буде такий варіант <a href="https://auto.ria.com/uk/auto_ducati_panigale-959_39807199.html">Ducati Panigale 959 2018</a>  </p></li>
-                <p> <p><img src="ducati_panigale-959__483765026f.jpg" alt="C:\Users\chaba\WebstormProjects\untitled\src\HW1\ducati_panigale-959__483765026f.jpg" width="434" height="342"></p></p>
-
-                <li><p>Друга модель буде <a href="https://auto.ria.com/uk/auto_yamaha_r1_39841919.html">Yamaha R1 2007</a>  </p></li>
-                <p> <p><img src="3_2007_YZF-R1-PROTO_BWC1_EUR_3.jpg" alt="C:\Users\chaba\WebstormProjects\untitled\src\HW1\3_2007_YZF-R1-PROTO_BWC1_EUR_3.jpg" width="504" height="372"></p></p>
-            </ul>
-
-
-    </section>
-
-
-    <section>
-        <h2>Секція авто</h2>
-
-        <ul>
-        <li><p>Перша модель покупки буде такий варіант <a href="https://auto.ria.com/uk/auto_nissan_altima_39851578.html">Nissan Altima 2016</a>  </p></li>
-        <p> <p><img src="nissan2016altimal.jpg" alt="C:\Users\chaba\WebstormProjects\untitled\src\HW1\nissan2016altimal.jpg" width="504" height="372"></p></p>
-
-        <li><p>Друга модель покупки буде такий варіант <a href="https://journal.classiccars.com/2023/05/29/pick-of-the-day-1997-nissan-skyline-gt-r/">Nissan Skyline 1997</a>  </p></li>
-        <p> <p><img src="nissan-skyline-gt-r-std.jpg" alt="C:\Users\chaba\WebstormProjects\untitled\src\HW1\nissan-skyline-gt-r-std.jpg"width="615" height="372"></p></p>
-        </ul>
-
-    </section>
+<body class="main-body">
+<div class="container">
+    <!-- Навігація з класом nav-menu -->
+    <nav class="nav-menu">
+        <a href="index.html">Головна</a> |
+        <a href="indexx.html">MOTO & AUTO</a> |
+        <a href="gallery.html">Галерея</a> |
+        <a href="contact.html">Контакти</a>
+    </nav>
 
     <hr>
-    <p><a href="index.html">← На головну</a></p>
 
-</main>
+    <header>
+        <div>
+            <h1 class="page-title">Мій сайт</h1>
+            <section class="info-section">
+                <h2 class="section-title">Тут буде трішки більше про мрії(?)</h2>
+                <p>В планах на майбутнє втілити декілька мрій. Пошуки будуть здійснюватись у цьому додатку: <a href="https://auto.ria.com/uk/">Auto.ria.</a></p>
+            </section>
+        </div>
+    </header>
 
+    <hr>
 
+    <main>
+        <!-- Секція мотоциклів -->
+        <section class="info-section">
+            <h2 class="section-title">Секція мото</h2>
+            <ul class="skills-list">
+                <li>
+                    <p>Перша модель покупці буде такий варіант <a href="https://auto.ria.com/uk/auto_ducati_panigale-959_39807199.html">Ducati Panigale 959 2018</a></p>
+                    <p><img src="ducati_panigale-959__483765026f.jpg" alt="Ducati Panigale 959" width="434" height="342" class="gallery-img"></p>
+                </li>
+                <li>
+                    <p>Друга модель буде <a href="https://auto.ria.com/uk/auto_yamaha_r1_39841919.html">Yamaha R1 2007</a></p>
+                    <p><img src="3_2007_YZF-R1-PROTO_BWC1_EUR_3.jpg" alt="Yamaha R1" width="504" height="372" class="gallery-img"></p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Секція автомобілів -->
+        <section class="info-section">
+            <h2 class="section-title">Секція авто</h2>
+            <ul class="skills-list">
+                <li>
+                    <p>Перша модель покупки буде такий варіант <a href="https://auto.ria.com/uk/auto_nissan_altima_39851578.html">Nissan Altima 2016</a></p>
+                    <p><img src="nissan2016altimal.jpg" alt="Nissan Altima 2016" width="504" height="372" class="gallery-img"></p>
+                </li>
+                <li>
+                    <p>Друга модель покупки буде такий варіант <a href="https://journal.classiccars.com/2023/05/29/pick-of-the-day-1997-nissan-skyline-gt-r/">Nissan Skyline 1997</a></p>
+                    <p><img src="nissan-skyline-gt-r-std.jpg" alt="Nissan Skyline GT-R" width="615" height="372" class="gallery-img"></p>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+        <p><a href="index.html" class="btn-back">← На головну</a></p>
+    </main>
+</div>
 </body>
 </html>

@@ -1,35 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+
     <meta charset="UTF-8">
     <title>Галерея</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav>
-    <a href="index.html">Головна</a> |
-    <a href="indexx.html">MOTO & AUTO</a> |
-    <a href="gallery.html">Галерея</a> |
-    <a href="contact.html">Контакти</a>
-</nav>
 
-<hr>
+<body class="main-body">
+<div class="container">
 
-<h1>    Галерея</h1>
 
-<h2>Мотоцикли</h2>
-<img src="3_2007_YZF-R1-PROTO_BWC1_EUR_3.jpg" alt="Yamaha R1" width="300">
-<img src="ducati_panigale-959__483765026f.jpg" alt="Ducati Panigale" width="300">
+    <nav class="nav-menu">
+        <a href="index.html">Головна</a> |
+        <a href="indexx.html">MOTO & AUTO</a> |
+        <a href="gallery.html">Галерея</a> |
+        <a href="contact.html">Контакти</a>
+    </nav>
 
-<h2>Автомобілі</h2>
-<img src="nissan-skyline-gt-r-std.jpg" alt="Nissan Skyline" width="300">
-<img src="nissan2016altimal.jpg" alt="Nissan Altima" width="300">
+    <hr>
 
-<h2>Тваринки</h2>
-<img src="5219907908315845260(1).jpg" alt="Photo 1" width="300">
-<img src="5467650422337115326.jpg" alt="Photo 2" width="300">
 
-<hr>
-<p><a href="index.html">← На головну</a></p>
+    <h1 class="page-title">Галерея</h1>
+
+
+    <section class="info-section">
+        <h2 class="section-title">Мотоцикли</h2>
+        <div class="gallery-grid">
+            <img src="3_2007_YZF-R1-PROTO_BWC1_EUR_3.jpg" alt="Yamaha R1" width="300" class="gallery-img">
+            <img src="ducati_panigale-959__483765026f.jpg" alt="Ducati Panigale" width="300" class="gallery-img">
+        </div>
+    </section>
+
+
+    <section class="info-section">
+        <h2 class="section-title">Автомобілі</h2>
+        <div class="gallery-grid">
+            <img src="nissan-skyline-gt-r-std.jpg" alt="Nissan Skyline" width="300" class="gallery-img">
+            <img src="nissan2016altimal.jpg" alt="Nissan Altima" width="300" class="gallery-img">
+        </div>
+    </section>
+
+
+    <section class="info-section">
+        <h2 class="section-title">Тваринки</h2>
+        <div class="gallery-grid">
+            <img src="5219907908315845260(1).jpg" alt="Котик Марс" width="300" class="gallery-img">
+            <img src="5467650422337115326.jpg" alt="Песик Тафі" width="300" class="gallery-img">
+        </div>
+    </section>
+
+    <hr>
+
+
+    <p><a href="index.html" class="btn-back">← На головну</a></p>
+</div>
 </body>
 </html>
